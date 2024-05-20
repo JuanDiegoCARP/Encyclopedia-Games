@@ -1,3 +1,4 @@
+/* elementos por id*/
 body{
     background-color: #F7E4FD;
 }
@@ -11,7 +12,14 @@ body{
     background-position: top left;
     width: 100px;
 }
+#titulo-cuerpo{ 
+    text-align: left;
+}
+#parrafos{
+text-align: justify;
+}
 
+/* elementos por class*/
 .menu{ 
     background-position: top left;
     background-color: white;  
@@ -26,10 +34,4 @@ body{
     text-align: center;
     font-size: 18px;
     line-height: 1.3;
-}
-#titulo-cuerpo{ 
-        text-align: left;
-}
-#parrafos{
-    text-align: justify;
 }
