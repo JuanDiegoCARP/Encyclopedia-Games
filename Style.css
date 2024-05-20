@@ -18,7 +18,17 @@ body{
 #parrafos{
 text-align: justify;
 }
-
+#xbox{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#xbox_consolas{
+    display: block;
+    margin-right: auto;
+    width: 50%;
+}
 /* elementos por class*/
 .menu{ 
     background-position: top left;
