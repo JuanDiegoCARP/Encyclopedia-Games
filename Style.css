@@ -1,10 +1,10 @@
 /* elementos por id*/
 body{
     background-color: #F7E4FD;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #titulo{
-    margin-left: 30%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #logo{
     background-size: contain;
@@ -28,12 +28,13 @@ text-align: justify;
     display: block;
     margin-right: auto;
     width: 50%;
+  
 }
 /* elementos por class*/
-.menu{ 
-    background-position: top left;
-    background-color: white;  
-    background-attachment: fixed;
+.menu{  
+    width: 100%;
+    padding:10px;
+    background-color: F7E4FD;  
     display: flex;         
 }
 .contenido{
