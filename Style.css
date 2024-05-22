@@ -9,20 +9,41 @@ body{
 #logo{
     background-position: top left; 
     width:40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 35%;
 }
 #barra_menu{
     width: 30px;
 }
 #boton_menu{
-    background-color: #F7E4FD;
-    border: #F7E4FD;
+    background-color: #eecdf8;
+    border-color: #eecdf8;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    text-decoration-line: none;
+    border-radius: 10%;
+}
+
+#contenido_info{
+    display: none;
+    background-color: #eecdf8;
+    border-color: #eecdf8;
+    margin-left: auto;
+    margin-right: 150px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: left;
 }
 #titulo-cuerpo{ 
     text-align: left;
 }
+
 #parrafos{
 text-align: justify;
 }
+
 #xbox{
     display: block;
     margin-left: auto;
@@ -32,16 +53,15 @@ text-align: justify;
 #xbox_consolas{
     display: block;
     margin-right: auto;
-    width: 100%;
-  
+    width: 100%; 
 }
+
 /* elementos por class*/
-.menu{
-    position: sticky;  
+.menu{ 
     width: 100%;
-    padding:10px;
-    background-color: F7E4FD;  
-    display: flex;         
+    padding:10px 20px;
+    background-color: #F7E4FD; 
+    display: flex;      
 }
 .contenido{
     width:  60%;
@@ -51,4 +71,8 @@ text-align: justify;
     text-align: center;
     font-size: 18px;
     line-height: 1.3;
+}
+.contacto{
+    background-color: #eecdf8;
+    width: 100%;
 }

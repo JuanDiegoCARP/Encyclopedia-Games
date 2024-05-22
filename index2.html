@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sony Playstation </title>
     <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
 <style>
 
 
@@ -15,10 +16,19 @@
 
 
 <body>
-    <div class="menu"> 
-        <button id="boton_menu" type="button" onclick="mostarmenu()"><img id="barra_menu" src="img/barra menu.png"></button>   
-        <a href="index.html"><img id="logo" src="img/Encyclopedia games.png" alt=""></a>   
+    <div class="menu">     
+        <img id="logo" src="img/Encyclopedia games.png" alt="">
+        <button id="boton_menu" type="button" onclick="ver()">Informacion</button>
+        <button id="boton_menu" type="button" onclick="">Contactos</button>
     </div>
+
+    <ul id="contenido_info">
+        <a href="index.html"><li>INICIO</li></a>
+        <a href="xbox.html"><li>XBOX</li></a>
+        <a href="index2.html"><li>PLAYSTATION</li></a>
+        <button id="boton_menu" onclick="cerrar()">cerrar</button>
+    </ul> 
+
     <div class="contenido">
       <img src="img/Sony.png" style="text-align: center;" width=50%>
         <p id="parrafos">La marca se introdujo por primera vez el 28 de febrero de 1990 en Japón​ y ha desarrollado y publicado cinco videoconsolas de sobremesa, 

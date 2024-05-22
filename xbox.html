@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consolas Xbox</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
     <style>
         h3,li{
             text-align: left;
@@ -14,19 +15,31 @@
 
 <body>
     <div class="menu">   
-        <button id="boton_menu" type="button" onclick="mostarmenu()"><img id="barra_menu" src="img/barra menu.png"></button> 
-        <a href="index.html"><img id="logo" src="img/Encyclopedia games.png"></a>
+       <img id="logo" src="img/Encyclopedia games.png">
+        <button id="boton_menu" type="button" onclick="ver()">Informacion</button>
+        <button id="boton_menu" type="button" onclick="">Contactos</button>
     </div>
+
+    <ul id="contenido_info">
+        <a href="index.html"><li>INICIO</li></a>
+        <a href="xbox.html"><li>XBOX</li></a>
+        <a href="index2.html"><li>PLAYSTATION</li></a>
+        <button id="boton_menu" onclick="cerrar()">cerrar</button>
+    </ul>     
+
     <div class="contenido">
         <h1 style="text-align: center;">Todas las consolas de Xbox hasta la fecha: lista completa</h1>  
         <img id="xbox" src="img/xbox.jpg">
         <p id="parrafos">Microsoft ha conseguido crear grandes consolas con el paso del tiempo. Ahora te las recopilamos todas en una sola noticia para que no te pierdas ningún detalle de ellas</p>
         <ul>
-            <li><h3>Xbox</h3></li>
+            <li><h3 id="titulo-cuerpo">Xbox</h3></li>
+            
             <p id="parrafos">Esta consola salió en el año 2001 y desde entonces sigue siendo una de las más destacadas de la compañía. Sobre todo por el hecho de ser la primera Xbox que vio la luz y por haber ofrecido el nacimiento de sagas tan icónicas como Halo o Forza Motorsport, franquicias que hoy en día siguen completamente vivas. El Jefe Maestro incluso tiene una serie que ha conseguido enamorar a todos los fans de su historia.</p>
             <img id="xbox_consolas" src="img/xbox consola.webp" alt="">           
+            
             <br>
-            <li><h3>Xbox 360</h3></li>
+           
+            <li><h3 id="titulo-cuerpo">Xbox 360</h3></li>
 
             <p id="parrafos">La Xbox 360 es tal vez la consola más querida de Microsoft, incluso también considerada como la mejor generación que ha habido. Lo más destacable de esta consola fue la <b>retrocompatibilidad</b>, aunque a dia de hoy es algo normal en ese entoces esta consola era de las primeras en ofrecer el servicio</p>
             <p id="parrafos">Contó con dos versiones adicionales las cuales eran una versión más pequeña y menos pesada que la consola principal.</p>
@@ -39,7 +52,7 @@
 
             <br>
 
-            <li><h3 >Xbox One</h3></li>             
+            <li><h3 id="titulo-cuerpo">Xbox One</h3></li>             
                 <p id="parrafos">Esta consola represento un cambio significativo respecto al anterior, era <b>10 veces mas potente que la anterior</b> y ademas tambien incorporaba la retrocompatibilidad, haciendo que el catalago sea realmente amplio</p>
                 <p id="parrafos">Al igual que la anterior consola de Microsoft, esta consola tambien contaba con dos versiones que mejoraba lo que ofrecia, como por ejemplo el <b>4k nativo</b></p>
                     <ul>
@@ -51,7 +64,7 @@
 
                     <img id="xbox_consolas" src="img/xbox one.webp" alt="">
            <br>
-            <li><h3>Xbox Serie X</h3></li> 
+            <li><h3 id="titulo-cuerpo">Xbox Serie X</h3></li> 
             
             <p id="parrafos"><b>Es actualmente la consola mas potente del mercado</b>, ofreciendo retrocompatibilidad para disfrutra juegos de sus predecesoras mas el nuevo Xbox game pass, el cual ofrece un catalogo de mas de 300 juegos asegurando horas de juegos con esta consola</p>   
             <p id="parrafos">Cuenta con dos versiones</p>
@@ -64,6 +77,12 @@
             <img id="xbox_consolas" src="img/xbox serie x.jpg" alt="">
         </ul>
         <p id="parrafos">Estas son las consolas de Microsoft que han ofrecido y ofreden horas de diversion.<br>Las prestaciones y servivios que esta empresa ofrecen no dejan de mejorar con el paso del tiempo, trayendo cosas como el <b>Xbox Games Pass</b> unos de los mejores servicios de suscripcion de pago que ofrece acceso a juegos y contenido exclusivo. Por eso para muchos amantes de los videosjuegos, las consolas de Xbox son de las mejores opciones del mercado.<br>Se espera que esta empresa siga trayendo consolas de calidad con tales prestaciones en el futuro para todos aquellos que disfrutamos de los Videjosjuegos a una <b>calidad y rendiminedo</b> que merecen los consumidores</p>
+    </div>
+
+    <div class="contacto">
+            <ul>
+                <li><a href="https://www.instagram.com/lucas_osella/">Instagram</li></a>
+            </ul>
     </div>
 </body>
 </html>
