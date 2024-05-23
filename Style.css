@@ -27,6 +27,7 @@ body{
 }
 
 #contenido_info{
+    list-style-type: none;
     display: none;
     background-color: #eecdf8;
     border-color: #eecdf8;
@@ -34,7 +35,19 @@ body{
     margin-right: 150px;
     width: 150px;
     border-radius: 10px;
+    padding: 5px;
+}
+
+#formulario{
     text-align: left;
+    display: none;
+    background-color: #eecdf8;
+    border-color: #eecdf8;
+    margin-left: auto;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 #titulo-cuerpo{ 
     text-align: left;
@@ -74,5 +87,4 @@ text-align: justify;
 }
 .contacto{
     background-color: #eecdf8;
-    width: 100%;
 }

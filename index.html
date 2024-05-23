@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,54 @@
 </head>
 
 <body>
-    
-    <div class="menu"> 
-        <img id="logo" src="img/Encyclopedia games.png"> 
-        <button id="boton_menu" type="button" onclick="ver()">Informacion</button>
-        <button id="boton_menu" type="button" onclick="">Contactos</button>
-    </div> 
+
+    <div class="menu">
+        <img id="logo" src="img/Encyclopedia games.png">
+        <button id="boton_menu" type="button" onclick="ver_info()">Informacion</button>
+        <button id="boton_menu" type="button" onclick="ver_form()">Contactos</button>
+    </div>
 
     <ul id="contenido_info">
-        <a href="index.html"><li>INICIO</li></a>
-        <a href="xbox.html"><li>XBOX</li></a>
-        <a href="index2.html"><li>PLAYSTATION</li></a>
+        <a href="index.html">
+            <li>INICIO</li>
+        </a>
+        <a href="xbox.html">
+            <li>XBOX</li>
+        </a>
+        <a href="index2.html">
+            <li>PLAYSTATION</li>
+        </a>
         <button id="boton_menu" onclick="cerrar()">cerrar</button>
-    </ul>     
+    </ul>
+
+    <form onsubmit="comprobar()" id="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text">
+        <label for="Numero">Numero</label>
+        <input type="number">
+        <label for="Email">Email</label>
+        <input type="text">
+        <p id="parrafos">Nos contactaremos con usted los mas rapido que podamos</p>
+        <button type="button" onsubmit="return comprobar()">Enviar</button>
+    </form>
 
     <div class="contenido">
         <h1 id="titulo-cuerpo">Consolas de videojuegos </h1>
-        <p id="parrafos">Las consolas de videojuegos son un tipo especializado de computadores que inicialmente se usaban exclusivamente para jugar, pero que, a medida que ha avanzado la tecnología, cada vez tienen más herramientas.</p>        
+        <p id="parrafos">Las consolas de videojuegos son un tipo especializado de computadores que inicialmente se
+            usaban exclusivamente para jugar, pero que, a medida que ha avanzado la tecnología, cada vez tienen más
+            herramientas.</p>
         <img src="img/consolasjuegos.png" width=100%>
-        <p id="parrafos">Aunque no tienen todas las funciones de una computadora tradicional, cuentan con aplicaciones que te permiten ver videos, escuchar música, ver películas en internet, además de jugar en línea con otras personas de todas partes del mundo.</p>
+        <p id="parrafos">Aunque no tienen todas las funciones de una computadora tradicional, cuentan con aplicaciones
+            que te permiten ver videos, escuchar música, ver películas en internet, además de jugar en línea con otras
+            personas de todas partes del mundo.</p>
+        <p id="parrafos">
+            Por muchos años ha existido una "guerra" por dominar el mercado de las consolas, muchas empresa han
+            participado con sus equipos pero quiene siempre
+            han sido nombradas son Microsoft con <a href="xbox.html"><b>Xbox</b></a> y Sony con <a href="index2.html"><b>PlayStation</b></a>. Cada nueva generacion de
+            consolas que estas empreas sacaban al mercado superaban las expectativas. <br> En este post te contamos la
+            historia de cada una de estas consolas
+        </p>
     </div>
 </body>
+
 </html>
