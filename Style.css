@@ -21,29 +21,32 @@ body{
     border-color: #eecdf8;
     font-size: 18px;
     margin: auto;
-    text-align: center;
     text-decoration-line: none;
     border-radius: 10%;
 }
 
+#boton_cerrar{
+   float: right;
+}
+
 #contenido_info{
+    float: right;
     list-style-type: none;
     display: none;
     background-color: #eecdf8;
     border-color: #eecdf8;
-    margin-left: auto;
     margin-right: 150px;
     width: 150px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #formulario{
+    float: right;
     text-align: left;
     display: none;
     background-color: #eecdf8;
     border-color: #eecdf8;
-    margin-left: auto;
     width: 180px;
     padding: 10px;
     border-radius: 10px;
@@ -71,13 +74,16 @@ text-align: justify;
 
 /* elementos por class*/
 .menu{ 
+    display: flex;
+    position: fixed;
+    top: 0;
     width: 100%;
-    padding:10px 20px;
-    background-color: #F7E4FD; 
-    display: flex;      
+    padding:10px 10px;
+    background-color: #F7E4FD;     
 }
 .contenido{
-    width:  60%;
+    width:60%;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;

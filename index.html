@@ -15,9 +15,13 @@
         <img id="logo" src="img/Encyclopedia games.png">
         <button id="boton_menu" type="button" onclick="ver_info()">Informacion</button>
         <button id="boton_menu" type="button" onclick="ver_form()">Contactos</button>
+   
+             
     </div>
 
+
     <ul id="contenido_info">
+        <button id="boton_cerrar" onclick="cerrar()">X</button>
         <a href="index.html">
             <li>INICIO</li>
         </a>
@@ -27,18 +31,22 @@
         <a href="index2.html">
             <li>PLAYSTATION</li>
         </a>
-        <button id="boton_menu" onclick="cerrar()">cerrar</button>
+
     </ul>
 
-    <form onsubmit="comprobar()" id="formulario">
+    <form onsubmit="return comprobar()" id="formulario" autocomplete="off">
+        <button id="boton_cerrar" onclick="cerrar_form()">X</button>
         <label for="nombre">Nombre</label>
-        <input type="text">
-        <label for="Numero">Numero</label>
-        <input type="number">
-        <label for="Email">Email</label>
-        <input type="text">
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="numero">Numero</label>
+        <input type="number" name="numero" id="numero">      
+        <br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <br>
         <p id="parrafos">Nos contactaremos con usted los mas rapido que podamos</p>
-        <button type="button" onsubmit="return comprobar()">Enviar</button>
+        <button type="submit">Enviar</button>
     </form>
 
     <div class="contenido">
