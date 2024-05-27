@@ -20,24 +20,39 @@
        <button id="boton_menu" type="button" onclick="ver_form()">Contactos</button>
     </div>
 
-    <ul id="contenido_info">
-        <button id="boton_cerrar" onclick="cerrar()">X</button>
-        <a href="index.html"><li>INICIO</li></a>
-        <a href="xbox.html"><li>XBOX</li></a>
-        <a href="index2.html"><li>PLAYSTATION</li></a>
-    </ul>   
+    <div class="contenido_info">
+        <ul id="contenido_info">
+            <button id="boton_cerrar" onclick="cerrar()">X</button>
+            <a href="index.html">
+                <li>INICIO</li>
+            </a>
+            <a href="xbox.html">
+                <li>XBOX</li>
+            </a>
+            <a href="index2.html">
+                <li>PLAYSTATION</li>
+            </a>
     
-    <form onsubmit="comprobar()" id="formulario">
-        <label for="nombre">Nombre</label>
-        <input type="text">
-        <label for="Numero">Numero</label>
-        <input type="number">
-        <label for="Email">Email</label>
-        <input type="text">
-        <p id="parrafos">Nos contactaremos con usted los mas rapido que podamos</p>
-        <button type="button" onsubmit="return comprobar()">Enviar</button>
-    </form>
-
+        </ul>
+    </div>
+    
+    <div class="formulario">
+        <form onsubmit="return comprobar(event)" id="formulario" autocomplete="off">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" onfocus="borrar_error(event)">
+            <br>
+            <label for="numero">Numero</label>
+            <input type="number" name="numero" id="numero" onfocus="borrar_error(event)">      
+            <br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" onfocus="borrar_error(event)">
+            <br>
+            <p id="parrafos_form"></p>
+            <button type="submit">Enviar</button>
+            <button type="button" onclick="cerrar_form()" id="boton_cerrar" >Cerrar</button>
+        </form>
+    </div>
+    
 
     <div class="contenido">
         <h1 style="text-align: center;">Todas las consolas de Xbox hasta la fecha: lista completa</h1>  

@@ -19,35 +19,39 @@
              
     </div>
 
-
-    <ul id="contenido_info">
-        <button id="boton_cerrar" onclick="cerrar()">X</button>
+<div class="contenido_info">  
+    <ul id="contenido_info">   
+        <button id="boton_cerrar" onclick="cerrar()">Cerrar</button>     
         <a href="index.html">
-            <li>INICIO</li>
+            <li><b>INICIO</b></li>
         </a>
         <a href="xbox.html">
-            <li>XBOX</li>
+            <li><b>XBOX</b></li>
         </a>
         <a href="index2.html">
-            <li>PLAYSTATION</li>
+            <li><b>PLAYSTATION</b></li>
         </a>
-
+       
     </ul>
+</div>
 
-    <form onsubmit="return comprobar()" id="formulario" autocomplete="off">
-        <button id="boton_cerrar" onclick="cerrar_form()">X</button>
+<div class="formulario">
+    <form onsubmit="return comprobar(event)" id="formulario" autocomplete="off">
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre">
+        <input type="text" name="nombre" id="nombre" onfocus="borrar_error(event)">
         <br>
         <label for="numero">Numero</label>
-        <input type="number" name="numero" id="numero">      
+        <input type="number" name="numero" id="numero" onfocus="borrar_error(event)">      
         <br>
         <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+        <input type="text" name="email" id="email" onfocus="borrar_error(event)">
         <br>
-        <p id="parrafos">Nos contactaremos con usted los mas rapido que podamos</p>
+        <p id="parrafos_form"></p>
         <button type="submit">Enviar</button>
+        <button type="button" onclick="cerrar_form()" id="boton_cerrar" >Cerrar</button>
     </form>
+</div>
+
 
     <div class="contenido">
         <h1 id="titulo-cuerpo">Consolas de videojuegos </h1>
