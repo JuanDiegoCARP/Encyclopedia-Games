@@ -61,7 +61,7 @@ function comprobar(event) {
 
         flagError=true;
     }
-    if(numero.value==""| !numero.value.length > 10){
+    if(numero.value==""|| numero.value.length > 10 || numero.value.length< 6 || numero.value<0){
         console.log("error numero")
         const spanError=document.createElement('span');
         spanError.innerHTML="Ingrese un numero valido";
@@ -83,13 +83,11 @@ function comprobar(event) {
     const para = document.createElement("p")
     para.innerHTML="Gracias "+nombre.value+" por comunicarte con nosotros, en breve nos pondremos en contacto";
     document.getElementById("parrafos_form").appendChild(para);
-
     }
 
 
 nombre.value=""
 email.value=""
 numero.value=""
-
    return false;
 }
