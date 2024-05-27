@@ -12,13 +12,12 @@
 
     <div class="menu">
         <img id="logo" src="img/Encyclopedia games.png">
-        <button id="boton_menu" type="button" onclick="ver_info()">Informacion</button>
+        <button id="boton_menu" type="button" onclick="ver_info()" ondblclick="cerrar()">Informacion</button>
         <button id="boton_menu" type="button" onclick="ver_form()">Contactos</button>         
     </div>
 
 <div class="contenido_info">  
-    <ul id="contenido_info">   
-        <button id="boton_cerrar" onclick="cerrar()">Cerrar</button>     
+    <ul id="contenido_info" onmouseleave="cerrar()">      
         <a href="index.html" id="links">
             <li><b>INICIO</b></li>
         </a>
@@ -66,7 +65,58 @@
             consolas que estas empreas sacaban al mercado superaban las expectativas. <br> En este post te contamos la
             historia de cada una de estas consolas
         </p>
+        <p id="parrafos">
+            Ahora te compararmos las caracteristicas de dos consolas de ultima generacion:
+        </p>
     </div>
+   <div class="tablas">
+            <table id="tabla_comparacion">
+                <tr><td colspan="2">PlayStation 5</td></tr>
+                <tr>
+                    <td>CPU</td>  
+                    <td>x86-64-AMD Ryzen™ Zen 2
+                        8 nucleos/16 hilos
+                        frecuencia variable, hasta 3.5GHz</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td> Motor de gráficos basado en AMD Radeon ™ RDNA 2
+                        Aceleración Ray Tracing
+                        Frecuencia variable, hasta 2.23 GHz (10.3 teraflops)</td>
+                </tr>
+                <tr>
+                    <td>Memoria</td>
+                    <td>GDDR6 16GB
+                        ancho de banda de 448GB/s</td>
+                </tr>
+                <tr>
+                    <td>SSD</td>
+                    <td>	
+                        825GB
+                        ancho de banda 5.5GB/s (raw)</td>
+                </tr>
+            </table>
+    
+            <table id="tabla_comparacion">
+                <tr><td colspan="2">Xbox Series X</td></tr>
+                <tr>
+                    <td>CPU</td>
+                    <td>CPU Zen 2 personaliza de 8 núcleos a 3,8 GHz (3,66 GHz con SMT)</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>GPU de 12 TERAFLOPS, 52 CU a 1,825 GHz con RDNA 2 personalizada</td>                   
+                </tr>
+                <tr>
+                    <td>Memoria</td>
+                    <td>GDDR6 de 16 GB</td>
+                </tr>
+                <tr>
+                    <td>SSD</td>
+                    <td>SD NVME personalizado de 1 TB (ampliable)</td>
+                </tr>
+            </table>
+        </div>
 </body>
 
 </html>
