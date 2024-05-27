@@ -18,13 +18,12 @@
 <body>
     <div class="menu">     
         <img id="logo" src="img/Encyclopedia games.png" alt="">
-        <button id="boton_menu" type="button" onclick="ver_info()">Informacion</button>
+        <button id="boton_menu" type="button" onclick="ver_info()" ondblclick="cerrar()">Informacion</button>
         <button id="boton_menu" type="button" onclick="ver_form()">Contactos</button>
     </div>
 
     <div class="contenido_info">  
-        <ul id="contenido_info">   
-            <button id="boton_cerrar" onclick="cerrar()">Cerrar</button>     
+        <ul id="contenido_info" onmouseleave="cerrar()">   
             <a href="index.html" id="links">
                 <li><b>INICIO</b></li>
             </a>
