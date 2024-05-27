@@ -12,6 +12,7 @@ body{
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 35%;
+
 }
 #barra_menu{
     width: 30px;
@@ -23,6 +24,13 @@ body{
     margin: auto;
     text-decoration-line: none;
     border-radius: 10%;
+    transition-duration: 0.4s;
+}
+
+#boton_menu:hover{
+    font-size: 20px;
+    border-color: white;
+    border-style: solid;
 }
 
 #boton_cerrar{
@@ -37,6 +45,13 @@ body{
     width: 150px;
     border-radius: 10px;
     padding: 10px;
+    transition-duration: 0.5s;
+}
+
+#links:hover{
+    background-color: burlywood;
+    color: white;
+    font-size: 20px;
 }
 
 #formulario{

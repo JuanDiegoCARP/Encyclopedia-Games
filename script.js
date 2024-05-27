@@ -46,6 +46,7 @@ function borrar_error(event){
 const regExpNombre = /^[a-zA-Z ]{0,20}$/;
 const regExpEmail = /^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/
 
+
 function comprobar(event) {
     event.preventDefault();
     const nombre=document.getElementById("nombre");
@@ -91,3 +92,4 @@ email.value=""
 numero.value=""
    return false;
 }
+
