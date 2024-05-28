@@ -89,11 +89,14 @@ text-align: justify;
     width: 50%;
 }
 
-#Imagen {
+#imagen{
     width: 100%;
     height: 400px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 /* elementos por class*/
 .menu{ 
     display: flex;
@@ -137,8 +140,9 @@ text-align: justify;
     padding: 10px;
 }
 
-.Carrousel{
-    width: auto;
+.carrousel{ 
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
+
 }
