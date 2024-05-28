@@ -104,7 +104,7 @@ numero.value=""
             'PS5.jpg',
             'xbox.jpg'
             ];
-        const TIEMPO = 1000;
+        const TIEMPO = 2500;
         let posicionActual = 0;
         let $botonRetroceder = document.querySelector('#retroceder');
         let $botonAvanzar = document.querySelector('#avanzar');
@@ -114,6 +114,7 @@ numero.value=""
         let intervalo;
 
         // Funciones
+        renderizarImagen();
 
         /**
          * Funcion que cambia la foto en la siguiente posicion

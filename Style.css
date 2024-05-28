@@ -95,6 +95,31 @@ text-align: justify;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
+}
+
+#avanzar{
+    background-color: #eecdf8;
+    border-color: #eecdf8;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+#avanzar:hover{
+    font-size: 20px;
+    border-color: white;
+    border-style: solid;
+}
+#retroceder{
+    background-color: #eecdf8;
+    border-color: #eecdf8;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+#retroceder:hover{
+    font-size: 20px;
+    border-color: white;
+    border-style: solid;
 }
 
 /* elementos por class*/
