@@ -93,11 +93,16 @@ numero.value=""
    return false;
 }
 
-window.onload = function(){
+
+
 
 // Variables
-
-const Imagenes = ['img/consolasjuegos.png','img/PS5.jpg','img/xbox.jpg'];
+window.onload = function (){
+console.log("hola")
+const Imagenes = [
+    'img/consolasjuegos.png',
+    'img/PS5.jpg',
+    'img/xbox.jpg'];
 
 const milesimas = 1000;
 
@@ -173,6 +178,7 @@ $botonAvanzar.removeAttribute('disabled');
 $botonRetroceder.removeAttribute('disabled');
 $botonPlay.removeAttribute('disabled');
 $botonStop.setAttribute('disabled',true);
+}
 
 // Eventos
 
@@ -181,11 +187,8 @@ $botonRetroceder.addEventListener('click', retrocederFoto);
 $botonPlay.addEventListener('click', playIntervalo);
 $botonStop.addEventListener('click', PararIntervalo);
 // iniciar
+
 renderizarImagen();
-
-
-}
-
 
 }
 

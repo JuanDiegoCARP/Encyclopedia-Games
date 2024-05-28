@@ -88,6 +88,12 @@ text-align: justify;
     text-align: left;
     width: 50%;
 }
+
+#Imagen {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
 /* elementos por class*/
 .menu{ 
     display: flex;
@@ -129,4 +135,10 @@ text-align: justify;
     display: flex;
     margin: auto;
     padding: 10px;
+}
+
+.Carrousel{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
 }
